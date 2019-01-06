@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <TITLE>Motion Library by Jonathan Topf</TITLE>
+
+    <meta name=viewport content='width=600'>
+    <link rel="icon" type="image/png" href="/src/img/favicon.png">
+    <link rel="apple-touch-icon" href="/src/img/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="/src/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/src/css/base.css" />
+    
+    <!-- touch only css -->
+    <script type="text/javascript">
+        if("ontouchstart" in window) 
+        {
+            document.write('<link rel="stylesheet" type="text/css" media="all" href="/src/css/touch.css" />');
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Motion Library - By Jonathan Topf
+    </h1>
+    <ul id="library-cards">
+{% for library_card in library_cards %}
+{{library_card}}
+{% endfor %}
+    </ul>
+</body>
+
+<script src="/src/js/main.js"></script>
