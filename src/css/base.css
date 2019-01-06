@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Signika:300,400');
+
+body 
+{
+	background-color: #333;
+	color: #fff;
+	font-family: Helvetica, Arial;
+	margin: 20px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+i
+{
+	font-style: italic;
+}
+
+h1,h2,h3,h4,h5
+{
+	font-family: Suez One;
+}
+
+h1
+{
+	font-size: 50px;
+}
+
+h2,h3,h4,h5
+{
+	font-size: 40px;
+}
+
+#library-cards
+{
+	padding-top: 20px;
+}
+
+.library-card
+{
+	display: inline-block;
+	background-color: #f00;
+	margin: 0 40px 40px 0;
+	padding: 15px;
+}
+
+.library-card li
+{
+	padding-top: 10px;
+}
+
+.library-card-preview
+{
+	width: 250px;
+	height: 250px;
+	background-color: #333;
+	margin-top: 10px;
+}
