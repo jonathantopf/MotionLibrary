@@ -11,6 +11,7 @@ body
 a
 {
 	text-decoration: none;
+	color: #fff;
 }
 
 i
@@ -71,7 +72,7 @@ h2,h3,h4,h5
 
 .library-card-title
 {
-	font-family: Suez One;
+	font-family: Signika;
 	font-size: 40px;
 }
 
@@ -87,4 +88,10 @@ h2,h3,h4,h5
 	position: relative;
 	top: -25px;
 	left: -25px;
+}
+
+#jonathan-topf-link
+{
+	color: #fff;
+	font-family: Signika
 }
