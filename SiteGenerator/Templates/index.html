@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 
 <head>
-    <TITLE>Motion Library by Jonathan Topf</TITLE>
+    <!-- <TITLE>Motion Library by Jonathan Topf</TITLE> -->
 
     <meta name=viewport content='width=600'>
     <link rel="icon" type="image/png" href="/src/img/favicon.png">
@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" media="all" href="/src/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="all" href="/src/css/base.css" />
     <link rel="stylesheet" type="text/css" media="all" href="/src/css/animation-test.css" />
+{% for preview_css_path in preview_css_paths %}
+    <link rel="stylesheet" type="text/css" media="all" href="/{{preview_css_path}}" />
+{% endfor %}
     
     <!-- touch only css -->
     <script type="text/javascript">
@@ -26,8 +29,8 @@
         Motion Library - By Jonathan Topf
     </h1>
     <ul id="library-cards">
-{% for library_card in library_cards %}
-{{library_card}}
+{% for library_card_htm in library_card_htms %}
+{{library_card_htm}}
 {% endfor %}
     </ul>
 </body>
