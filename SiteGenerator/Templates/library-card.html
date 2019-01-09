@@ -1,8 +1,42 @@
-    <li class="library-card">
-        <div class="library-card-preview">
-            <div class="library-card-marker {{preview_class_name}}">
-                <img src="/src/img/library-card-marker.png">
-            </div>
-        </div>
-        <div class="library-card-title">{{title}}</div>
-    </li>
+	<li class="library-card">
+		<svg width="250" height="250" class="library-card-preview {{preview_class_name}}">
+			<g transform="scale(125)">
+				<g transform="translate(1, 1)">
+
+					<!-- Grid -->
+					<line x1="-1" y1="-0.2" x2="1" y2="-0.2" stroke="#171717" stroke-width="0.01"/>
+					<line x1="-1" y1="-0.4" x2="1" y2="-0.4" stroke="#171717" stroke-width="0.01"/>
+					<line x1="-1" y1="-0.6" x2="1" y2="-0.6" stroke="#171717" stroke-width="0.01"/>
+					<line x1="-1" y1="-0.8" x2="1" y2="-0.8" stroke="#171717" stroke-width="0.01"/>
+
+					<line x1="-1" y1="0.2" x2="1" y2="0.2" stroke="#171717" stroke-width="0.01"/>
+					<line x1="-1" y1="0.4" x2="1" y2="0.4" stroke="#171717" stroke-width="0.01"/>
+					<line x1="-1" y1="0.6" x2="1" y2="0.6" stroke="#171717" stroke-width="0.01"/>
+					<line x1="-1" y1="0.8" x2="1" y2="0.8" stroke="#171717" stroke-width="0.01"/>
+
+					<line x1="-0.2" y1="-1" x2="-0.2" y2="1" stroke="#171717" stroke-width="0.01"/>
+					<line x1="-0.4" y1="-1" x2="-0.4" y2="1" stroke="#171717" stroke-width="0.01"/>
+					<line x1="-0.6" y1="-1" x2="-0.6" y2="1" stroke="#171717" stroke-width="0.01"/>
+					<line x1="-0.8" y1="-1" x2="-0.8" y2="1" stroke="#171717" stroke-width="0.01"/>
+
+					<line x1="0.2" y1="-1" x2="0.2" y2="1" stroke="#171717" stroke-width="0.01"/>
+					<line x1="0.4" y1="-1" x2="0.4" y2="1" stroke="#171717" stroke-width="0.01"/>
+					<line x1="0.6" y1="-1" x2="0.6" y2="1" stroke="#171717" stroke-width="0.01"/>
+					<line x1="0.8" y1="-1" x2="0.8" y2="1" stroke="#171717" stroke-width="0.01"/>
+
+					<line x1="0" y1="-1" x2="0" y2="1" stroke="#222" stroke-width="0.01"/>
+					<line x1="-1" y1="0" x2="1" y2="0" stroke="#222" stroke-width="0.01"/>
+
+					<!-- Marker -->
+					<g class="library-card-marker">
+						<line x1="0" y1="0" x2="0" y2="-0.2" stroke="green" stroke-width="0.03" stroke-linecap="round"/>
+						<line x1="0" y1="0" x2="0.2" y2="0" stroke="red" stroke-width="0.03" stroke-linecap="round"/>
+						<circle r="0.05" fill="white"/>
+					</g>
+				</g>
+			<g>
+		</svg>
+		<div class="library-card-title">
+		{{title}}
+		</div>
+	</li>

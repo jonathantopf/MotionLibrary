@@ -70,11 +70,11 @@ class Animation ():
             transformed_sample[0] /= max_position_component - min_position_component
             transformed_sample[1] /= max_position_component - min_position_component
 
-            # Scale animation to 0-100
-            transformed_sample[0] *= 100
-            transformed_sample[1] *= 100
+            # # Scale animation to 0-100
+            # transformed_sample[0] *= 100
+            # transformed_sample[1] *= 100
 
-            line = "  {0}%   {{left: {1}%; top: {2}%;}}\n".format(
+            line = "  {0}%   {{transform: translate({1}px,{2}px);}}\n".format( # It seems that we have to use .px even though we arent working in pixels
                 float(i * 100) / len(self.position_samples), 
                 (transformed_sample[0]), 
                 (transformed_sample[1]),
@@ -83,7 +83,7 @@ class Animation ():
             output += line
 
         output += "}\n\n"
-        output += ".{0}\n".format (self.safe_name ())
+        output += ".{0} .library-card-marker\n".format (self.safe_name ())
         output += "{\n"
         output += "  animation: {0}_animation {1}s infinite;\n".format(self.safe_name(), self.duration())
         output += "}\n"
